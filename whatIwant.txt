@@ -1,0 +1,5 @@
+1. There should be a home page
+2. Home -> Read Blogs 
+3. Home -> Write Blogs
+4. Read blogs page: template mainly, link to main blog
+5. Write blogs: Form post req to get the actual submit

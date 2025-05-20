@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+    
+<div class="all-blogs">
+    <h1>All Blogs</h1>
+    <% if(locals.blogs && blogs.length>0) {%>
+        <% for(var i =0;i<blogs.length;i++){ %>
+            <div class="blog-data">
+             <p class="author"> Authored By: <%= blogs[i]['title']%></p>  
+             <p class="data"> <%= blogs[i]['data']%></p> 
+            </div>
+        <%}%>
+    <%}else{%>
+        <h1>Sorry, no blogs are present here! 0_0</h1>
+    <%}%>
+</div>
+    <button onclick="window.location.href='/'">Back to Home</button>
+</body>
+
+<%- include("partials/footer.ejs") %>
